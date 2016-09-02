@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul,li,div,body,img,span,i{padding:0;margin:0;}
+        body{background-color: #cccccc;}
+        ul{background-color:#fff;}
+        .main{padding-top:500px;padding-left:200px;}
+        .main_Left{position: relative;width:440px;}
+        .main_smallImg{overflow: hidden;padding-left: 13px;}
+        .main_smallImg li{float: left;list-style: none;position: relative;margin-left: 19px;padding-top: 22px;;}
+        .main_smallImg li img{border:1px #999 solid;}
+        .main_smallImg li i{position: absolute;width:13px;height:11px;top:5px;left: 25px;background: url("images/box_btn.png") no-repeat;text-indent: -99em;overflow: hidden;display: none;}
+        .main_smallImg .main_imgCur i{display: block;}
+        .main_smallImg .main_imgCur img{border: 1px solid red;}
+        .main_MiddleImg{position: relative;}
+        .main_board{display:block;position:absolute;background: url("images/btn_bg.png");text-indent: -99em;overflow: hidden;cursor: move;}
+        .main_bigImg{width:480px;height:360px;position: absolute; overflow: hidden;}
+        .main_bigImg img{position: absolute;}
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="main_Left">
+        <div class="main_bigImg" style="display: none;top:0;left: 450px;"><img id="bigImg" src="images/1_b.jpg" width="800" height="800" style="top:0;left: 0;" /></div>
+        <div class="main_MiddleImg" id="middleDiv">
+            <span class="main_board" style="display: none;width:236px;height:197px;top:0;left: 0;">□</span>
+            <img src="images/1_m.jpg" width="440" height="440" />
+        </div>
+        <ul class="main_smallImg" id="smallUl">
+            <li class="main_imgCur"><img src="images/1_s.jpg" width="58" height="58" /><i>↑</i></li>
+            <li><img src="images/2_s.jpg" width="58" height="58" /><i>↑</i></li>
+            <li><img src="images/3_s.jpg" width="58" height="58" /><i>↑</i></li>
+            <li><img src="images/4_s.jpg" width="58" height="58" /><i>↑</i></li>
+            <li><img src="images/5_s.jpg" width="58" height="58" /><i>↑</i></li>
+        </ul>
+    </div>
+</div>
+<script src="js/js.js"></script>
+</body>
+</html>
